@@ -17,8 +17,10 @@ public class App
         String hour = dtf.format(LocalDateTime.now());
         int hr = Integer.parseInt(hour);
         String greet = "Good ??";
-        
-        if (hr < 12) {
+
+        if (hr < 3) {
+        	greet = "Good Night";
+        } else if (hr < 12) {
         	greet = "Good Morning";
         } else if (hr < 16) {
         	greet = "Good Afternoon";

@@ -16,7 +16,7 @@ public class App
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH");
         String hour = dtf.format(LocalDateTime.now());
         int hr = Integer.parseInt(hour);
-        String greet = "Good ??";
+        String greet = "Good ?";
 
         if (hr < 3) {
         	greet = "Good Night";
